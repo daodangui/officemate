@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="办公用品，办公设备，办公家具，文具，办公物资，办公家电，办公耗材，办公用纸，劳保用品，文体用品，生活用品，体育用品，数码产品，家用电器，商务礼品，打印机，复印纸，文件夹">
+    <meta name="description" content="OfficeMate办公伙伴商城-办公用品O2O一站式采购平台">
+    <title>OfficeMate办公伙伴商城</title>
+    <link rel="icon" href="images/home/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script data-main="js/page/home" src="js/require.js"></script>
+</head>
+<body>
+    <!--页面头部-->
+    <header>
+        <div id="head_top">
+            <div class="pageheart">
+                <div id="location">
+                    <span class="province">北京</span>
+                    <span class="city">北京市</span>
+                </div>
+                <div id="login">
+                    <p>您好， 请<a href="./view/login.html">登录</a> <a href="./view/register.html">注册</a></p>
+                </div>
+                <ul>
+                    <li><a href="">我的订单</a>|</li>
+                    <li><a href="">关注商城</a>|</li>
+                    <li><a href="">手机办公伙伴</a>|</li>
+                    <li><a href="">行业资讯</a>|</li>
+                    <li><a href="">批发用户申请</a>|</li>
+                    <li><a href="">合约用户申请</a>|</li>
+                    <li><a href="">企业网校</a>|</li>
+                </ul>
+                <div id="tel">
+                    <span>400-678-8616</span>
+                </div>
+            </div>
+        </div>
+        <div id="head_middle">
+            <div class="pageheart">
+                <a href="#" id="logo">
+                    <img class="lazy" data-original="images/home/65863e06aa099d7fbc19ab83aed1f9ae78de21db.png" alt="">
+                </a>
+                <div id="search">
+                    <form action="">
+                        <input type="text">
+                        <div id="datalist"></div>
+                        <button></button>
+                        <p><a href="">文具</a>  <a href="">复印纸</a>  <a href="">打印机</a>  <a href="">文件夹</a>  <a href="">办公耗材</a>  <a href="">办公设备</a></p>
+                    </form>
+                </div>
+                <div id="cartpar">   
+                    <div id="myShoppingCart">
+                        <span>我的购物车</span>
+                        <span class="number">0</span>
+                        <span class="triangle"></span>
+                    </div>
+                    <div id="cartList">
+                        <div class="lastchild">
+                            <p>共<span class="number">0</span>件商品 总计：<span id="finsum">￥0</span></p>
+                            <button><a href="view/cart.html" style="color: white">去结算</a></button>
+                        </div>
+                        <div class="empty">
+                            <p>购物车还没有商品，赶紧选购吧！</p>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+        <menu id="head_menu">
+            <div class="pageheart">
+                <div id="itemList">
+                    <span>全部商品分类</span>
+                    <ul id="itemListContent">
+                        <li><a href="">办公伙伴主打</a>
+                            <div class="kind">
+                                <div>
+                                    <dl>
+                                        <dt>财务纸品</dt>
+                                        <dd>
+                                            <a href="view/gallery.html">凭证/单据</a>
+                                            <a href="view/gallery.html">复写纸</a>
+                                            <a href="view/gallery.html">账本</a>
+                                            <a href="view/gallery.html">报表</a>
+                                            <a href="view/gallery.html">工资袋/表</a>
+                                        </dd>
+                                        <dt>财务周边用品</dt>
+                                        <dd>
+                                            <a href="">复写垫板</a>
+                                            <a href="">护指套</a>
+                                            <a href="">票叉</a>
+                                            <a href="">湿手器/点钞腊</a>
+                                            <a href="">手提金库</a>
+                                            <a href="">橡皮筋支票</a>
+                                        </dd>
+                                        <dt>财务装订用品</dt>
+                                        <dd>
+                                            <a href="">财务装订机</a>
+                                            <a href="">财务装订耗材</a>
+                                        </dd>
+                                        <dt>印章用品</dt>
+                                        <dd>
+                                            <a href="">号码机</a>
+                                            <a href="">印台</a>
+                                            <a href="">印油/印泥</a>
+                                            <a href="">印章</a>
+                                            <a href="">印章胶垫</a>
+                                            <a href="">印章箱/盒</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div>
+                                    <dl>
+                                        <dt>特色品牌</dt>
+                                        <dd>
+                                            <a href="">MATEIST/欧标</a>
+                                            <a href="">国保</a>
+                                            <a href="">姿彩</a>
+                                            <a href="">啄木鸟</a>
+                                            <a href="">吉丽/g-leaf</a>
+                                            <a href="">赞扬</a>
+                                            <a href="">南泰利</a>
+                                            <a href="">三菱</a>
+                                            <a href="">斑马</a>
+                                            <a href="">瑞利夫</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">OA用纸</a></li>
+                        <li><a href="">OA耗材</a></li>
+                        <li><a href="">文件管理</a></li>
+                        <li><a href="">财会用品</a></li>
+                        <li><a href="">办公设备</a></li>
+                        <li><a href="">数码电子</a></li>
+                        <li><a href="">作业用品</a></li>
+                        <li><a href="">生活用品</a></li>
+                        <li><a href="">办公家具</a></li>
+                        <li><a href="">办公电器</a></li>
+                        <li><a href="">学生体育用品</a></li>
+                        <li><a href="">展示用品</a></li>
+                        <li><a href="">精品礼物</a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">增值通</a></li>
+                    <li><a href="">帮助中心</a></li>
+                    <li><a href="">团购</a></li>
+                    <li><a href="">福分通</a></li>
+                    <li><a href="">渠道客户</a></li>
+                    <li><a href="">合约在线</a></li>
+                    <li><a href="">企业购</a></li>
+                    <li><a href="">央采</a></li>
+                </ul>
+                <div>
+                    <a href="">行业资讯</a>
+                    <div id="user">
+                        <div class="clear">
+                            <div id="avatar">
+                                <img class="lazy" data-original="images/home/goods1.jpg" alt="">
+                            </div>
+                            <div id="welcome">
+                                <p>HI,欢迎来到办公伙伴</p>
+                                <p><a href="./view/login.html">登录</a><a href="./view/register.html">注册</a></p>
+                            </div>
+                        </div>
+                        <div id="news" class="clear">
+                            <p class="newshead">
+                                <span>快讯</span>
+                                <a href="">更多&gt;&gt;</a>
+                            </p>
+                            <ul>
+                                <li><a href="">【通告】办公伙伴商城改版通知</a></li>
+                                <li><a href="">办公伙伴O2O一站式办公解决方案获批“重庆市互联网+试点项目</a></li>
+                                <li><a href="">【重要发布】办公伙伴精彩亮相2016中国金融采购高峰论坛</a></li>
+                                <li><a href="">独家专访中国办公伙伴何志——做一家打通最后一公里有温度的电商</a></li>
+                                <li><a href="">OfficeMate办公伙伴合约平台移动端正式上线发布</a></li>
+                            </ul>
+                        </div>
+                        <div class="clear">
+                            <a href=""><img class="lazy" data-original="images/home/e88ede2ca4e89e9717d91fd0ffb15cb83eb0da85.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </menu>
+    </header>
+    <!--页面主体内容部分-->
+    <div id="container">
+        <!--首页轮播图-->
+        <div id="slider" class="swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide slide1"><a href=""><img src="images/home/e25ceef292773d21c7a77c5db34ed2613762f90d.jpg" alt=""></a></li>
+                <li class="swiper-slide slide2"><a href=""><img src="images/home/c4762b63e62aa9448fa454cffad294ad1140bea2.jpg" alt=""></a></li>
+                <li class="swiper-slide slide3"><a href=""><img src="images/home/c6a2c5e42dc246bdab2da920aa3a83adb3376d62.jpg" alt=""></a></li>
+                <li class="swiper-slide slide4"><a href=""><img src="images/home/e7f913701a571f91a5989fd94a4f76d07e5784e7.jpg" alt=""></a></li>
+                <li class="swiper-slide slide5"><a href=""><img src="images/home/f9aa9525d98521bc582a3627e75b8549370ee1c5.jpg" alt=""></a></li>
+                <li class="swiper-slide slide6"><a href=""><img src="images/home/5eee032e5693758a7cf3e732cf54dac328f9fe3e.jpg" alt=""></a></li>
+                <li class="swiper-slide slide7"><a href=""><img src="images/home/d1077367dbcbc55e4b2307d1ac6296e791ba6c1d.jpg" alt=""></a></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="pageheart">
+            <!--商品信息部分-->
+            <div id="content">
+                <div id="itemSlider" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href=""><img src="images/home/2ea1bd266147f2d96dbb815f3b9e196ee063bb65.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="images/home/576f321b198a914648ff3bcee889117fa42fa37a.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="images/home/b8a2ec7b7bd5a87089f1bca31082d7779317b409.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="images/home/5864a639cbe0b519b73f5b2fd9fe37c526377695.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="images/home/fee1b005b5784e6329584555c428bfa22f8e7d29.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="images/home/44053af54664ce035c0f529f95c7dab1133191b2.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="images/home/4c1c028a1165072f06a470a990c2e27c826014e5.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href=""><img src="images/home/375dd4551beae5638f271af3a708f0493432df5a.jpg" alt=""></a></div>
+                    </div>
+                    <div id="btn_prev" class="swiper-button-prev"></div>
+                    <div id="btn_next" class="swiper-button-next"></div>
+                </div>
+                <!--推荐置顶商品-->
+                <div id="recommend" class="clear">
+                    <div id="newProducts">
+                        <div class="rmd_head">
+                            <span>新品推荐</span>
+                            <span>New Products</span>
+                        </div>
+                        <div class="rmd_content">
+                            <div class="rmd_left item">
+                                <div class="rmd_title">
+                                    <div>
+                                        欧标圆形笔筒
+                                    </div>
+                                    <div>
+                                        金属网纹圆形笔筒亚黑
+                                    </div>
+                                </div>
+                                <a href="/view/item.html"><img class="lazy"  data-original="images/home/5d554181de03194378be216dd2e75daab02f3fe1.jpg" alt=""></a>
+                            </div>
+                            <div class="rmd_right">
+                                <div class="rmd_item item">
+                                    <div class="rmd_title">
+                                        <div>
+                                            金达牛皮纸档案盒
+                                        </div>
+                                        <div>
+                                            高档进口纯浆牛皮纸对裱
+                                        </div>
+                                    </div>
+                                    <a href=""><img class="lazy" data-original="images/home/14e4fc62d90801462ed00525c7c760dec7caf4e7.png" alt=""></a>
+                                </div>
+                                <div class="rmd_item item">
+                                    <div class="rmd_title">
+                                        <div>
+                                            得力公文蓝票据
+                                        </div>
+                                        <div>
+                                            时尚 大气 彩色鲜亮
+                                        </div>
+                                    </div>
+                                    <a href=""><img class="lazy" data-original="images/home/e474f55774df56390a4e0c8a0f8d94c765bc5659.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="optimization">
+                        <div class="rmd_head">
+                            <span>办公优选</span>
+                            <span>Optimization</span>
+                        </div>
+                        <div class="rmd_content">
+                            <div class="rmd_left item">
+                                <div class="rmd_title">
+                                    <div>
+                                        佳能喷墨一体机
+                                    </div>
+                                    <div>
+                                        高质量打印文档照片
+                                    </div>
+                                </div>
+                                <a href=""><img class="lazy" data-original="images/home/06bff8104925ef95e3669453326eb1817cc59044.jpg" alt=""></a>
+                            </div>
+                            <div class="rmd_right">
+                                <div class="rmd_item item">
+                                    <div class="rmd_title">
+                                        <div>
+                                            得力四层带锁文件柜
+                                        </div>
+                                        <div>
+                                            便于文件收藏
+                                        </div>
+                                    </div>
+                                    <a href=""><img class="lazy" data-original="images/home/940dd4a401b2de0b24b41dba2ca5c5a2c86502fc.png" alt=""></a>
+                                </div>
+                                <div class="rmd_item item">
+                                    <div class="rmd_title">
+                                        <div>
+                                            欧标 资料册A4
+                                        </div>
+                                        <div>
+                                            环保PP材料 牢固美观
+                                        </div>
+                                    </div>
+                                    <a href=""><img class="lazy" data-original="images/home/dc15464cd60b2fc8122fe0862478ad57cd0b5438.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="specialOffers">
+                        <div class="rmd_head">
+                            <span>微信特价</span>
+                            <span>Special Offers</span>
+                        </div>
+                        <div class="rmd_content">
+                            <div class="rmd_left">
+                                <div class="rmd_item item">
+                                    <div class="rmd_title">
+                                        <div>
+                                            得力计算器12位 黑色
+                                        </div>
+                                        <div>
+                                            得力计算器，质量上乘
+                                        </div>
+                                    </div>
+                                    <div class="wechat">
+                                        <div>
+                                            <img class="lazy" data-original="images/home/67c0f766bee3034f9e6e7d44535335fa4ded79a4.png" alt="">
+                                            <img class="lazy" data-original="images/home/c1fdfb22c9a9259f89749ecc74272ed3388e11af.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rmd_item item">
+                                    <div class="rmd_title">
+                                        <div>
+                                            齐心松紧带风琴包
+                                        </div>
+                                        <div>
+                                            A4文件风琴包
+                                        </div>
+                                    </div>
+                                    <div class="wechat">
+                                        <div>
+                                            <img class="lazy" data-original="images/home/57bcd49857de9ba852243a4f991f1d8cce8599d1.png" alt="">
+                                            <img class="lazy" data-original="images/home/c6ad49efc3ad47e9d250baf23d071f32f5f3a02d.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rmd_right">
+                                <div class="rmd_item item">
+                                    <div class="rmd_title">
+                                        <div>
+                                            汇东彩色复印纸
+                                        </div>
+                                        <div>
+                                            A4 100P 粉色
+                                        </div>
+                                    </div>
+                                    <div class="wechat">
+                                        <div>
+                                            <img class="lazy" data-original="images/home/2776c4f03a1fa444f5ab16f9fe433834ef9122df.png" alt="">
+                                            <img class="lazy" data-original="images/home/3c5875103b528f47a73520885a755f0b98d163cd.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rmd_item item">
+                                    <div class="rmd_title">
+                                        <div>
+                                            万能通计算器
+                                        </div>
+                                        <div>
+                                            12位大字幕显示
+                                        </div>
+                                    </div>
+                                    <div class="wechat">
+                                        <div>
+                                            <img class="lazy" data-original="images/home/419edbdf04f23b8978cb936798624a822ed922b7.png" alt="">
+                                            <img class="lazy" data-original="images/home/50502c8cbe97e9db42ec626ee198dcbd17f0c167.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--猜你喜欢-->
+                <div id="youlike" class="clear">
+                    <div id="yltitle">
+                        <p>猜你喜欢</p>
+                    </div>
+                    <div id="ylitembox" class="clear">
+                    </div>
+                </div>
+                <!--商品分类展示模块-->
+                <div id="itemkind">
+                    <!--双栏-->
+                    <div class="dbcol clear">
+                        <div class="dbcol_left dbcolbox"></div>
+                        <div class="dbcol_right dbcolbox"></div>
+                    </div>
+                    <!--单栏-->
+                    <div class="sgcol clear"></div>
+                    <!--双栏-->
+                    <div class="dbcol clear">
+                        <div class="dbcol_left dbcolbox"></div>
+                        <div class="dbcol_right dbcolbox"></div>
+                    </div>
+                    <!--单栏-->
+                    <div class="sgcol clear"></div>
+                    <!--双栏-->
+                    <div class="dbcol clear">
+                        <div class="dbcol_left dbcolbox"></div>
+                        <div class="dbcol_right dbcolbox"></div>
+                    </div>
+                    <!--三栏-->
+                    <div class="trcol">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面底部-->
+    <footer>
+        <div id="foot1">
+            <div class="pageheart">
+                <div>
+                    <h6>100%正品</h6>
+                    <p>确保所有的产品为原装正品</p>
+                </div>
+                <div>
+                    <h6>放心购物</h6>
+                    <p>7天退换货保障</p>
+                </div>
+                <div>
+                    <h6>货到付款</h6>
+                    <p>支持刷卡和现金支付</p>
+                </div>
+                <div>
+                    <h6>正规发票</h6>
+                    <p>机打发票，随箱附送</p>
+                </div>
+                <div>
+                    <h6>全国联保</h6>
+                    <p>专业保修就在家门口</p>
+                </div>
+            </div>
+        </div>
+        <div id="foot2">
+            <div class="pageheart">
+                <div>
+                    <ul>
+                        <li><a href="">物流配送</a></li>
+                        <li><a href="">配送服务</a></li>
+                        <li><a href="">运费说明</a></li>
+                        <li><a href="">配送政策</a></li>
+                        <li><a href="">上门自提</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">注册于登录</a></li>
+                        <li><a href="">购物流程</a></li>
+                        <li><a href="">发票制度</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">支付说明</a></li>
+                        <li><a href="">支付方式</a></li>
+                        <li><a href="">货到付款</a></li>
+                        <li><a href="">关于优惠券</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">售后服务</a></li>
+                        <li><a href="">退换货政策</a></li>
+                        <li><a href="">退换货流程</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                        <p>办公伙伴微信</p>
+                        <div>
+                            <img class="lazy" data-original="images/footer/erweima.jpg" alt="" style="width: 64px">
+                        </div>
+                        <p>关注有惊喜</p>
+                    </div>
+                    <div>
+                        <p>全国服务热线</p>
+                        <p>400-678-8616</p>
+                        <p>周一至周五：8:30-18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="foot3">
+            <div class="pageheart">
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">帮助中心</a></li>
+                    <li><a href="">购物流程</a></li>
+                    <li><a href="">会员中心</a></li>
+                    <li><a href="">合约平台</a></li>
+                    <li><a href="">优惠券</a></li>
+                    <li><a href="">办公资讯</a></li>
+                    <li><a href="">网站地图</a></li>
+                    <li><a href="">手机商城</a></li>
+                </ul>
+                <p>版权所有 &copy; CopyRight 2007-2017  欧菲斯办公伙伴控股有限公司  渝ICP备14006025号-1</p>
+                <p><span></span>渝公网安备 50010302000721号  食品经营许可证：SP5009051410003138</p>
+            </div>
+        </div>
+        <div id="foot4">
+            <div class="pageheart">
+                <ul>
+                    <li><a href=""><img class="lazy" data-original="images/footer/webpolice.jpg" alt=""></a></li>
+                    <li><a href=""><img class="lazy" data-original="images/footer/sm_124x47.png" alt=""></a></li>
+                    <li><a href=""><img class="lazy" data-original="images/footer/webscan.png" alt=""></a></li>
+                    <li><a href=""><img class="lazy" data-original="images/footer/logo.png" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><a href="">友情链接：</a></li>
+                    <li><a href="">废塑料</a></li>
+                    <li><a href="">淘宝优惠券</a></li>
+                    <li><a href="">什么值得买</a></li>
+                    <li><a href="">网贷技术论坛</a></li>
+                    <li><a href="">商标转让</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--置顶标题栏-->
+    <div id="menutop">
+        <div class="pageheart">
+            <img src="images/home/logo.png" alt="">
+            <form id="mtSearch" action="">
+                <input type="text">
+                <button></button>
+            </form>
+            <span>全国服务热线：400-678-8616</span>
+        </div>
+    </div>
+    <!--右侧边栏-->
+    <div id="sidebar">
+        <ul>
+            <li><a href=""><div>会员中心</div></a></li>
+            <li><a href="/view/cart.html"><div>购物车</div></a></li>
+            <li><a href=""><div>在线客服</div></a></li>
+            <li><a href=""><div>我的收藏</div></a></li>
+            <li><a href=""><div><img src="images/home/erweima.jpg" alt=""></div></a></li>
+            <li><a href="javascript:void(0)"><div>返回顶部</div></a></li>
+        </ul>
+    </div>
+    <!--左侧边栏-->
+    <div id="sidebarscroll">
+        <ul>
+            <li>纸类耗材</li>
+            <li>办公设备</li>
+            <li>办公电器</li>
+            <li>数码电子</li>
+            <li>生活用品</li>
+            <li>工艺礼品</li>
+        </ul>
+    </div>
+    <!--各种模板-->
+    <!--猜你喜欢模板-->
+    <script id="yltem" type="text/html">
+        <%for(var i=0; i<data.length; i++){%>
+        <div class="ylitem">
+            <div class="item">
+                <a href=""><img class="lazy" src="http://www.officemate.cn/<%=data[i].image_url%>" alt=""></a>
+            </div>
+            <div class="yldes">
+                <p><%=data[i].name%></p>
+                <span>￥<%=data[i].price%></span>
+            </div>
+        </div>
+        <%}%>
+    </script>
+    <!--双栏模板-->
+    <script id="dbcolboxtem" type="text/html">
+        <div class="dbcolhead">
+            <h2>纸类/耗材</h2>
+            <div>
+                <a href="">复印纸</a>
+                <a href="">相片纸</a>
+                <a href="">传真纸</a>
+            </div>
+        </div>
+        <div class="dbcolcontent">
+            <div class="dbcolcon_left">
+                <div>
+                    <a class="title1" href="#">
+                        <h3><%=data[0].name%></h3>
+                        <h6><%=data[0].des%></h6>
+                    </a>
+                    <div class="item">
+                        <a href=""><img class="lazy" data-original="images/home/<%=data[0].src%>" alt=""></a>
+                    </div>
+                </div>
+                <div>
+                    <a class="title2" href="#">
+                        <h3><%=data[1].name%></h3>
+                        <h6><%=data[1].des%></h6>
+                        <span>点击查看</span>
+                    </a>
+                    <div class="item">
+                        <a href=""><img class="lazy" data-original="images/home/<%=data[1].src%>" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dbcolcon_right">
+                <%for(var i=2; i<6; i++){%>
+                <%if(i>=2&&i<4){%>
+                <div class="dbcolcon_right_top">
+                    <a class="title3" href="">
+                        <%}else{%>
+                        <div class="dbcolcon_right_bottom">
+                            <a class="title4" href="">
+                                <%}%>
+
+                                <h3><%=data[i].name%></h3>
+                                <h6><%=data[i].des.split(' ')[0]%> <br> <%=data[i].des.split(' ')[1]%></h6>
+                            </a>
+                            <div class="item">
+                                <a href=""><img class="lazy" data-original="images/home/<%=data[i].src%>" alt=""></a>
+                            </div>
+                        </div>
+                        <%}%>
+                </div>
+            </div>
+    </script>
+    <!--单栏模板-->
+    <script id="sgcoltem" type="text/html">
+        <div class="sgcolhead">
+            <h2>办公设备</h2>
+            <div>
+                <a href="">传真机</a>
+                <a href="">复合机</a>
+                <a href="">碎纸机</a>
+            </div>
+        </div>
+        <div class="sgcolcontent">
+            <div class="sgcolleft">
+                <a href="">
+                    <img class="lazy" data-original="images/home/b97c565d8f8a94de8f81c8241eb8bb038d34d40d.jpg" alt="">
+                </a>
+                <%for(var i=0; i<2; i++){%>
+                <div class="sgcolitem">
+                    <a class="title3" href="">
+                        <h3><%=data[i].name%></h3>
+                        <h6><%=data[i].des.split(' ')[0]%> <br> <%=data[i].des.split(' ')[1]%></h6>
+                    </a>
+                    <div class="item">
+                        <img class="lazy" data-original="images/home/<%=data[i].src%>" alt="">
+                    </div>
+                </div>
+                <%}%>
+            </div>
+            <div class="sgcolright">
+                <%var k=2,n;%>
+                <%for(var i=0; i<3; i++){%>
+                <div>
+                    <%if(i == 1) n=3; else n=2;%>
+                    <%for(var j=0; j<n;j++){%>
+                    <div class="sgcolitem">
+                        <a class="title3" href="">
+                            <h3><%=data[k].name%></h3>
+                            <h6><%=data[k].des.split(' ')[0]%> <br> <%=data[k].des.split(' ')[1]%></h6>
+                        </a>
+                        <div class="item">
+                            <img class="lazy" data-original="images/home/<%=data[k++].src%>" alt="">
+                        </div>
+                    </div>
+                    <%}%>
+                </div>
+                <%}%>
+            </div>
+        </div>
+    </script>
+    <!--三栏模板-->
+    <script id="trcoltem" type="text/html">
+        <div class="trcolhead">
+            <h2>工艺礼品</h2>
+            <div>
+                <a href="">钟表</a>
+                <a href="">请帖</a>
+            </div>
+        </div>
+        <div class="trcolcontent">
+            <div class="trcol_top">
+                <div class="trcol_left">
+                    <div>
+                        <a class="title1" href="#">
+                            <h3><%=data[0].name%></h3>
+                            <h6><%=data[0].des%></h6>
+                        </a>
+                        <div class="item">
+                            <a href=""><img class="lazy" data-original="images/home/<%=data[0].src%>" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trcol_right">
+                    <div>
+                        <a class="title3" href="">
+                            <h3><%=data[1].name%></h3>
+                            <h6><%=data[1].des.split(' ')[0]%> <br> <%=data[1].des.split(' ')[1]%></h6>
+                        </a>
+                        <div class="item">
+                            <a href=""><img class="lazy" data-original="images/home/<%=data[1].src%>" alt=""></a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="title3" href="">
+                            <h3><%=data[2].name%></h3>
+                            <h6><%=data[2].des.split(' ')[0]%> <br> <%=data[2].des.split(' ')[1]%></h6>
+                        </a>
+                        <div class="item">
+                            <a href=""><img class="lazy" data-original="images/home/<%=data[2].src%>" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trcol_bottom">
+                <div>
+                    <a class="title3" href="">
+                        <h3><%=data[3].name%></h3>
+                        <h6><%=data[3].des.split(' ')[0]%> <br> <%=data[3].des.split(' ')[1]%></h6>
+                    </a>
+                    <div class="item">
+                        <a href=""><img class="lazy" data-original="images/home/<%=data[3].src%>" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <!--搜索引擎模板-->
+    <script id="searchtem" type="text/html">
+        <ul>
+            <%for(var i=0; i<data.length; i++){%>
+            <li><%=data[i]%></li>
+            <%}%>
+        </ul>
+    </script>
+    <!-- 购物车缩略图模板 -->
+    <script id="cartmini" type="text/html">
+        <%for(var i=0; i<data.length;i++){%>
+        <div class="itemdiv">
+            <div class="cartListimg">
+                <a href=""><img src="<%=data[i].image_url%>" alt=""></a>
+            </div>
+            <div class="cartListinfo">
+                <p class="minicartname"><%=data[i].name%></p>
+                <p><span>￥<%=data[i].price%></span>*<span><%=data[i].num%></span><a href="javascript:void(0)" class="remove">移除</a></p>
+            </div>
+        </div>
+        <%}%>
+    </script>
+</body>
+</html>

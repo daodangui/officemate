@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车页面</title>
+    <link rel="icon" href="../images/home/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script data-main="../js/page/cart" src="../js/require.js"></script>
+</head>
+<body>
+    <header>
+        <div id="head_top"></div>
+        <div id="headcontent">
+            <div class="pageheart">
+                <div>
+                    <img src="../images/home/65863e06aa099d7fbc19ab83aed1f9ae78de21db.png" alt="">
+                </div>
+                <div><h1>购物车</h1></div>
+                <div>
+                    <form action="">
+                        <input type="text"><button><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <div class="pageheart">
+            <div id="empty">
+                <div>
+                    <div>
+                        <i class="fa fa-shopping-basket"></i>
+                    </div>
+                    <div>
+                        <p>您的购物车里还没有商品，您可以：</p>
+                        <p>将 <a href="">收藏夹</a>中的商品添加进来，或者去看看 <a href="">商城 »</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div id="itemnum">
+                    <p>全部商品：<span>2</span></p>
+                </div>
+                <div id="itemtb">
+                    <table >
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" class="allchecked"> <label for="allchecked">全选</label>
+                                </th>
+                                <th>商品</th>
+                                <th>销售价</th>
+                                <th>数量</th>
+                                <th>优惠金额</th>
+                                <th>小计</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="finally">
+                                <td colspan="7">
+                                    <div>
+                                        <p>商品总金额：<span>￥21.00</span></p>
+                                        <p>订单优惠金额：<span>￥0.00</span></p>
+                                        <p>总金额：<span>￥21.00</span></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="allchecked"> <label for="allchecked">全选</label>
+                                </td>
+                                <td colspan="5">
+                                    <a href="">删除选中商品</a>
+                                    <a href="">继续购物</a>
+                                </td>
+                                <td>
+                                    <a href="">结算</a>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div id="conbottom">
+                <div id="conbmenu">
+                    <ul class="clear">
+                        <li>猜你喜欢</li>
+                        <li>我的收藏</li>
+                        <li>最近浏览</li>
+                    </ul>
+                </div>
+                <div id="conbslider">
+                    <div id="slider" class="swiper-container">
+                        <div class="swiper-wrapper">
+                        </div>
+                        <div id="btn_prev" class="swiper-button-prev"></div>
+                        <div id="btn_next" class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <!-- 购物车内商品模板 -->
+    <script id="itemtem" type="text/html">
+        <%for(var i=0; i<data.length; i++){%>
+            <tr>
+                <td>
+                    <input type="checkbox" class="checked">
+                </td>
+                <td>
+                    <img src="<%=data[i].image_url%>" alt="">
+                    <p class="itemname"><%=data[i].name%></p>
+                </td>
+                <td>
+                    <p class="price"><%=data[i].price%></p>
+                </td>
+                <td>
+                    <div class="clear"><a class="sub" href="javascript:void(0)">-</a><input class="num" type="text" value="<%=data[i].num%>"><a class="add" href="javascript:void(0)">+</a></div>
+                </td>
+                <td><p>￥0.00</p></td>
+                <td><p class="itemsum"><%=data[i].price%></p></td>
+                <td>
+                    <a href="javascript:void(0)" class="collect">收藏</a>|<a href="javascript:void(0)" class="remove">移除</a>
+                </td>
+            </tr>
+        <%}%>
+    </script>
+    <!-- 轮播图模板 -->
+    <script id="slidertem" type="text/html">
+        <%for(var i=0; i<data.length; i++){%>
+        <div class="swiper-slide">
+            <img src="http://www.officemate.cn/<%=data[i].image_url%>" alt="">
+            <div class="word">
+                <p><%=data[i].name%></p>
+                <p>￥<%=data[i].price%></p>
+            </div>
+            <button><i class="fa fa-cart-arrow-down"></i> <span href=""></span>加入购物车</button>
+        </div>
+        <%}%>
+    </script>
+</body>
+</html>
