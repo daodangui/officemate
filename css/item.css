@@ -1,0 +1,1034 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, td, option, button, p, fieldset, input, textarea, menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font: 12px '微软雅黑';
+}
+
+li {
+  list-style: none;
+}
+
+a, input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: normal;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.pageheart {
+  width: 1190px;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header, #container, footer {
+  width: 100%;
+}
+
+header {
+  height: 185px;
+  background: #fff;
+}
+
+#head_top {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e2e2e2;
+  line-height: 30px;
+  font-size: 12px;
+  color: #666;
+}
+#head_top a {
+  color: #666;
+}
+#head_top div > div, #head_top ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+#head_top #location span {
+  margin-left: 10px;
+}
+#head_top #location .city:after {
+  content: url("../images/home/down.png");
+  position: relative;
+  left: 15px;
+  top: 5px;
+}
+#head_top #login {
+  margin-left: 250px;
+}
+#head_top #login p > a:first-child {
+  color: #e40000;
+}
+#head_top ul {
+  margin-left: 20px;
+}
+#head_top ul li {
+  float: left;
+}
+#head_top ul li a {
+  padding: 0px 10px;
+  text-align: center;
+  display: inline-block;
+}
+#head_top #tel {
+  background: url("../images/home/tel_r.png") no-repeat 0px 6px;
+  box-sizing: border-box;
+  padding-left: 23px;
+}
+#head_top #tel span {
+  font-size: 16px;
+  color: #c7000b;
+}
+
+#head_middle {
+  width: 100%;
+  height: 115px;
+  color: #666;
+}
+
+#head_menu {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #c7000b;
+  color: white;
+  font-size: 15px;
+}
+#head_menu a {
+  color: white;
+  font-size: 15px;
+}
+#head_menu > div > div, #head_menu > div > ul {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  box-sizing: border-box;
+}
+#head_menu #itemList {
+  width: 205px;
+  text-align: center;
+  background: #ae0000 url("../images/home/mulu.png") no-repeat 30px 13px;
+}
+#head_menu #itemList:hover ul {
+  display: block;
+}
+#head_menu #itemList ul {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  height: 450px;
+  display: none;
+  background-color: rgba(66, 9, 0, 0.8);
+}
+#head_menu #itemList ul li {
+  width: 100%;
+  height: 32px;
+  float: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+#head_menu #itemList ul li > a {
+  font-size: 13px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 32px;
+  border-bottom: 1px solid #4f121a;
+  vertical-align: top;
+}
+#head_menu #itemList ul li:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#head_menu #itemList ul li:hover > a {
+  color: #333;
+}
+#head_menu #itemList ul li:hover .kind {
+  display: block;
+}
+#head_menu #itemList ul li .kind {
+  width: 985px;
+  height: 450px;
+  top: 0px;
+  left: 205px;
+  color: #333;
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 999;
+  text-align: left;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+#head_menu #itemList ul li .kind > div {
+  float: left;
+}
+#head_menu #itemList ul li .kind > div dt {
+  line-height: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px dashed #666;
+}
+#head_menu #itemList ul li .kind > div a {
+  color: #333;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0px 10px;
+  border-right: 1px solid #ccc;
+  line-height: 13px;
+}
+#head_menu #itemList ul li .kind > div a:hover {
+  text-decoration: underline;
+}
+#head_menu #itemList ul li .kind > div:first-child {
+  width: 70%;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+#head_menu #itemList ul li .kind > div:last-child {
+  width: 30%;
+  box-sizing: border-box;
+  height: 200px;
+}
+#head_menu #itemList ul li:last-child {
+  height: 34px;
+}
+#head_menu #itemList ul li:last-child a {
+  border: none;
+}
+#head_menu > div > ul {
+  overflow: hidden;
+  margin-left: -5px;
+}
+#head_menu > div > ul li {
+  float: left;
+}
+#head_menu > div > ul li a {
+  display: inline-block;
+  padding: 0px 20px;
+}
+#head_menu > div > ul li a:hover {
+  background: #ae0000;
+}
+#head_menu > div > div:last-child {
+  float: right;
+}
+#head_menu > div > div:last-child > a {
+  display: inline-block;
+  padding: 0px 20px;
+}
+#head_menu > div > div:last-child > a:hover {
+  background: #ae0000;
+}
+
+#logo {
+  float: left;
+  margin-top: 30px;
+}
+
+#myShoppingCart {
+  width: 174px;
+  height: 42px;
+  line-height: 42px;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  float: right;
+  margin-top: 30px;
+  background: url("../images/home/cart.png") no-repeat 10px 14px;
+  text-align: center;
+}
+#myShoppingCart span:first-child {
+  font-size: 14px;
+  margin-right: 5px;
+  margin-left: 25px;
+}
+#myShoppingCart span:nth-child(2) {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: white;
+  line-height: 24px;
+  text-align: center;
+  background: #ff594e;
+  border-radius: 20px;
+  font-size: 14px;
+}
+#myShoppingCart span:last-child {
+  position: relative;
+  left: 5px;
+  top: 3px;
+}
+
+.triangle {
+  display: inline-block;
+  border: 5px solid transparent;
+  border-top-color: #999;
+}
+
+#search {
+  width: 475px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+#search input {
+  width: 426px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #e40000;
+  margin-top: 30px;
+  padding-left: 5px;
+}
+#search button {
+  width: 49px;
+  height: 40px;
+  border: 0px;
+  float: right;
+  margin-top: 30px;
+  background: #e40000 url("../images/home/search.png") no-repeat 10px 5px;
+}
+#search span {
+  display: inline-block;
+  margin-top: 14px;
+  word-spacing: 5px;
+}
+
+footer {
+  height: 607px;
+  width: 100%;
+  background: #fff;
+}
+footer #foot1 {
+  width: 100%;
+  height: 110px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+footer #foot1 > div > div {
+  display: inline-block;
+  width: 220px;
+  height: 100%;
+  margin-right: 18px;
+}
+footer #foot1 > div > div:nth-child(1) {
+  background: url("../images/footer/footer-01.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(2) {
+  background: url("../images/footer/footer-02.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(3) {
+  background: url("../images/footer/footer-03.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(4) {
+  background: url("../images/footer/footer-04.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(5) {
+  background: url("../images/footer/footer-05.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:last-child {
+  margin-right: 0px;
+}
+footer #foot1 > div > div h6 {
+  font-size: 18px;
+  color: #ff1717;
+  margin-top: 34px;
+}
+footer #foot1 > div > div p {
+  font-size: 12px;
+  color: #333;
+}
+footer #foot1 > div > div h6, footer #foot1 > div > div p {
+  margin-left: 70px;
+}
+footer #foot2 {
+  margin-top: 20px;
+  height: 140px;
+}
+footer #foot2 > div > div {
+  height: 100%;
+  float: left;
+}
+footer #foot2 > div > div:first-child {
+  width: 710px;
+  border-right: 1px solid #333;
+}
+footer #foot2 > div > div:last-child > div {
+  float: left;
+  height: 100%;
+  width: 180px;
+  box-sizing: border-box;
+}
+footer #foot2 > div > div:last-child > div:first-child {
+  text-align: center;
+}
+footer #foot2 > div > div:last-child > div:first-child p:first-child {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 8px;
+}
+footer #foot2 > div > div:last-child > div:first-child p:last-child {
+  color: #ff1717;
+  line-height: 20px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:first-child {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 8px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:nth-child(2) {
+  color: #c7000b;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:last-child {
+  letter-spacing: 2px;
+}
+footer #foot2 > div > div ul {
+  float: left;
+  width: 150px;
+  margin-top: 10px;
+}
+footer #foot2 > div > div ul:first-child {
+  margin-left: 100px;
+}
+footer #foot2 > div > div ul a {
+  font-size: 12px;
+  line-height: 20px;
+}
+footer #foot2 > div > div ul li:first-child a {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+}
+footer #foot3 {
+  color: #666666;
+  margin-top: 30px;
+}
+footer #foot3 a {
+  color: #666;
+}
+footer #foot3 > div {
+  text-align: center;
+}
+footer #foot3 > div ul {
+  overflow: hidden;
+  display: inline-block;
+}
+footer #foot3 > div ul li {
+  float: left;
+}
+footer #foot3 > div ul li a {
+  display: inline-block;
+  border-right: 1px solid #666;
+  padding: 0px 10px;
+}
+footer #foot3 > div p {
+  line-height: 25px;
+}
+footer #foot3 > div p:nth-child(2) {
+  margin-top: 6px;
+}
+footer #foot3 > div p span {
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  background: url("../images/footer/beian.png") no-repeat 0px 0px;
+  margin: 0 3px -6px;
+}
+footer #foot4 {
+  margin-top: 50px;
+}
+footer #foot4 > div {
+  text-align: center;
+}
+footer #foot4 > div ul:first-child {
+  display: inline-block;
+  height: 96px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+footer #foot4 > div ul:first-child li {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer #foot4 > div ul:first-child li img {
+  width: 130px;
+  margin: 0px 20px;
+}
+footer #foot4 > div ul:first-child li:last-child img {
+  width: 70px;
+}
+footer #foot4 > div ul:last-child {
+  margin-top: 20px;
+}
+footer #foot4 > div ul:last-child li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+footer #foot4 > div ul:last-child li:first-child {
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+#content {
+  width: 100%;
+}
+#content #contop {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+}
+#content #contop ul {
+  display: inline-block;
+  vertical-align: top;
+}
+#content #contop ul li {
+  float: left;
+}
+#content #contop ul li a {
+  margin: 0px 3px;
+}
+#content #conmain {
+  width: 100%;
+}
+#content #conmain .conleft {
+  width: 230px;
+  float: left;
+}
+#content #conmain .conleft img {
+  position: relative;
+}
+#content #conmain .conleft > div {
+  border: 1px solid #d4d4d4;
+}
+#content #conmain .conleft .conleftbox {
+  width: 100%;
+  margin-bottom: 7px;
+}
+#content #conmain .conleft .conleftbox .clbtitle {
+  width: 100%;
+  background: #f7f7f7;
+  height: 33px;
+  border-bottom: 1px solid #d4d4d4;
+  line-height: 33px;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 11px;
+}
+#content #conmain .conleft .conleftbox > div {
+  width: 100%;
+}
+#content #conmain .conleft .conleftbox ul, #content #conmain .conleft .conleftbox li {
+  width: 100%;
+  overflow: hidden;
+}
+#content #conmain .conleft .conleftbox #youlike ul li {
+  height: 90px;
+  border-bottom: 1px dashed #d4d4d4;
+  font-size: 13px;
+}
+#content #conmain .conleft .conleftbox #youlike ul li img {
+  width: 90px;
+  height: 100%;
+}
+#content #conmain .conleft .conleftbox #youlike ul li div {
+  padding-top: 11px;
+  display: inline-block;
+  width: 134px;
+  height: 100%;
+}
+#content #conmain .conleft .conleftbox #youlike ul li div p {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #d72426;
+}
+#content #conmain .conleft .conleftbox #history ul li {
+  height: 188px;
+  border-bottom: 1px dashed #d4d4d4;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+#content #conmain .conleft .conleftbox #history ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+}
+#content #conmain .conleft .conleftbox #history ul li a img {
+  height: 120px;
+}
+#content #conmain .conleft .conleftbox li:last-child {
+  border: 0px !important;
+}
+#content #conmain .conright {
+  width: 948px;
+  float: right;
+}
+#content #conmain .conright > div {
+  width: 100%;
+}
+#content #conmain .conright #crtop {
+  height: 490px;
+  position: relative;
+}
+#content #conmain .conright #crtop .crtleft {
+  height: 100%;
+  width: 300px;
+  float: left;
+}
+#content #conmain .conright #crtop .crtleft .imgbox {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #d4d4d4;
+  position: relative;
+}
+#content #conmain .conright #crtop .crtleft .imgbox img {
+  width: 100%;
+  height: 100%;
+}
+#content #conmain .conright #crtop .crtleft .imgbox i {
+  position: absolute;
+  z-index: 999;
+  color: #333;
+  right: 0px;
+  bottom: 0px;
+  font-size: 30px;
+}
+#content #conmain .conright #crtop .crtleft .imgList {
+  width: 100%;
+  height: 65px;
+  margin: 15px 0px;
+}
+#content #conmain .conright #crtop .crtleft .imgList #imgSlider {
+  position: relative;
+}
+#content #conmain .conright #crtop .crtleft .imgList #imgSlider > div > div {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#content #conmain .conright #crtop .crtleft .imgList #imgSlider img {
+  height: 62px;
+  width: 62px;
+}
+#content #conmain .conright #crtop .crtleft .imgList #imgSlider .swiper-button-prev, #content #conmain .conright #crtop .crtleft .imgList #imgSlider .swiper-button-next {
+  background: #ccc;
+  width: 16px;
+  height: 60px;
+  border-radius: 15px;
+  position: absolute;
+  top: 24px;
+  text-align: center;
+  line-height: 60px;
+}
+#content #conmain .conright #crtop .crtleft .imgList #imgSlider .swiper-button-prev {
+  left: 0px;
+}
+#content #conmain .conright #crtop .crtleft .imgList #imgSlider .swiper-button-next {
+  right: 0px;
+}
+#content #conmain .conright #crtop .crtleft .btnList {
+  text-align: center;
+}
+#content #conmain .conright #crtop .crtleft .btnList a {
+  display: inline-block;
+  width: 80px;
+  height: 28px;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 28px;
+  margin: 0px 5px;
+  user-select: none;
+  cursor: pointer;
+  background: linear-gradient(to bottom, white, #ccc);
+}
+#content #conmain .conright #crtop .crtleft .btnList a:first-child i {
+  color: #5c9c30;
+}
+#content #conmain .conright #crtop .crtleft .btnList a:nth-child(2) i {
+  color: #5c9c30;
+}
+#content #conmain .conright #crtop .crtleft .btnList a:last-child i {
+  color: #f49f18;
+}
+#content #conmain .conright #crtop .crtleft .btnList a i {
+  vertical-align: middle;
+  font-size: 16px;
+}
+#content #conmain .conright #crtop .crtright {
+  width: 630px;
+  height: 100%;
+  float: right;
+}
+#content #conmain .conright #crtop .crtright > div {
+  width: 100%;
+}
+#content #conmain .conright #crtop .crtright .prco {
+  height: 53px;
+  border-bottom: 1px dashed #d4d4d4;
+  line-height: 25px;
+  margin-top: 10px;
+}
+#content #conmain .conright #crtop .crtright .prco i {
+  font-size: 14px;
+}
+#content #conmain .conright #crtop .crtright .prco .price {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+#content #conmain .conright #crtop .crtright .gifts {
+  padding: 10px 0px;
+  font-size: 14px;
+}
+#content #conmain .conright #crtop .crtright .gifts h5 {
+  letter-spacing: 13px;
+}
+#content #conmain .conright #crtop .crtright .gifts > div > div {
+  font-size: 12px;
+}
+#content #conmain .conright #crtop .crtright .gifts > div > div:first-child {
+  width: 70px;
+  height: 25px;
+  border: 1px solid #d4d4d4;
+  border-top: 2px solid red;
+  border-bottom: 0px;
+  margin-top: 10px;
+  z-index: 100;
+  position: relative;
+  bottom: -1px;
+  text-align: center;
+  line-height: 25px;
+  background-color: white;
+}
+#content #conmain .conright #crtop .crtright .gifts > div > div:last-child {
+  border: 1px solid #d4d4d4;
+  padding: 10px;
+}
+#content #conmain .conright #crtop .crtright .gifts > div > div:last-child span {
+  display: inline-block;
+  width: 46px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  padding: 0px 2px;
+}
+#content #conmain .conright #crtop .crtright .gifts > div > div:last-child p {
+  display: inline-block;
+}
+#content #conmain .conright #crtop .crtright .info table {
+  width: 100%;
+  text-align: center;
+}
+#content #conmain .conright #crtop .crtright .buy {
+  height: 115px;
+  border: 1px solid #ffe6ca;
+  background-color: #fffdf4;
+  margin-top: 10px;
+}
+#content #conmain .conright #crtop .crtright .buy > div:first-child {
+  margin: 10px;
+  padding-left: 50px;
+}
+#content #conmain .conright #crtop .crtright .buy > div:first-child div {
+  display: inline-block;
+  height: 32px;
+  border: 1px solid #999;
+}
+#content #conmain .conright #crtop .crtright .buy > div:first-child div input {
+  width: 40px;
+  height: 100%;
+  border: 0px;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  box-sizing: border-box;
+  text-align: center;
+  box-sizing: border-box;
+}
+#content #conmain .conright #crtop .crtright .buy > div:first-child div a {
+  width: 32px;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: top;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+#content #conmain .conright #crtop .crtright .buy > div:first-child div a:hover {
+  background-color: #666;
+  color: white;
+}
+#content #conmain .conright #crtop .crtright .buy > div:first-child > span:last-child {
+  display: inline-block;
+  margin-left: 3px;
+  width: 68px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #666;
+  background-color: #ddd;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child a {
+  display: inline-block;
+  width: 126px;
+  height: 42px;
+  color: white;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child a:first-child {
+  margin: 10px 10px 0px 15px;
+  background-color: #da1f29;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child a:first-child:hover {
+  background-color: #ff242f;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child a:nth-child(2) {
+  background-color: #fc570f;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child a:nth-child(2):hover {
+  background-color: #e8520e;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child > div {
+  display: inline-block;
+  position: relative;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child > div span {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 35px;
+  position: relative;
+  padding: 4px;
+  z-index: 10;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child > div span i {
+  font-size: 14px;
+  vertical-align: middle;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child > div:hover > span {
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  border-top: 0px;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child > div:hover > div {
+  display: block;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child > div div {
+  display: none;
+  position: absolute;
+  top: -159px;
+  left: 35px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  z-index: 0;
+}
+#content #conmain .conright #crtop .crtright .buy > div:last-child > div div img {
+  width: 148px;
+  height: 148px;
+}
+#content #conmain .conright #crbottom > ul {
+  border: 1px solid #d4d4d4;
+  box-shadow: 1px 1px 1px #ccc;
+  background: #fafafa;
+}
+#content #conmain .conright #crbottom > ul > li {
+  float: left;
+  width: 86px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  border-right: 1px solid #cccccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+#content #conmain .conright #crbottom > ul > li:first-child {
+  color: white;
+  background: red;
+}
+#content #conmain .conright #crbottom .crbcontent {
+  width: 100%;
+  padding-top: 10px;
+}
+#content #conmain .conright #crbottom .crbcontent > div {
+  width: 100%;
+  display: none;
+}
+#content #conmain .conright #crbottom .crbcontent > div:first-child {
+  display: block;
+}
+#content #conmain .conright #crbottom .crbcontent > div:first-child table.tabhead {
+  width: 100%;
+  height: 50px;
+  background: #eee;
+  margin-bottom: 10px;
+}
+#content #conmain .conright #crbottom .crbcontent > div:first-child table.tabhead td {
+  padding-left: 15px;
+}
+#content #conmain .conright #crbottom .crbcontent > div:first-child > div table {
+  width: 740px;
+  border-collapse: collapse;
+}
+#content #conmain .conright #crbottom .crbcontent > div:first-child > div table tr {
+  height: 35px;
+}
+#content #conmain .conright #crbottom .crbcontent > div:first-child > div table tr td {
+  border: 1px solid #d4d4d4;
+  font-size: 13px;
+}
+#content #conmain .conright #crbottom .crbcontent > div:first-child > div table tr td:first-child {
+  width: 87px;
+  font-weight: bold;
+  text-align: center;
+}
+#content #conmain .conright #crbottom .crbcontent > div:first-child > div table tr td:nth-child(2) {
+  width: 476px;
+  padding-left: 10px;
+}
+#content #conmain .conright #crbottom .crbcontent > div:nth-child(2) {
+  height: 170px;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #d4d4d4;
+}
+#content #conmain .conright #crbottom .crbcontent > div:nth-child(2) > div:first-child {
+  width: 100%;
+  border-bottom: 1px solid #d4d4d4;
+  height: 120px;
+  line-height: 25px;
+}
+#content #conmain .conright #crbottom .crbcontent > div:nth-child(2) > div:first-child > div {
+  height: 100%;
+  float: left;
+  font-size: 13px;
+  color: #666;
+}
+#content #conmain .conright #crbottom .crbcontent > div:nth-child(2) > div:first-child > div span {
+  color: #e0a902;
+  margin: 0px 5px;
+}
+#content #conmain .conright #crbottom .crbcontent > div:nth-child(2) > div:first-child > div:first-child {
+  width: 40%;
+  box-sizing: border-box;
+  padding: 30px 0px 0px 50px;
+}
+#content #conmain .conright #crbottom .crbcontent > div:nth-child(2) > div:first-child > div:last-child {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 20px 0px 0px 60px;
+}
+#content #conmain .conright #crbottom .crbcontent > div:nth-child(2) > div:last-child {
+  width: 100%;
+  line-height: 30px;
+}
+
+#am {
+  width: 300px;
+  height: 300px;
+  float: right;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  z-index: 999;
+  left: 315px;
+  top: 0px;
+  border: 1px solid #d4d4d4;
+}
+
+#areabox {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  opacity: 0.5;
+  display: block;
+  position: absolute;
+}
+
+#amimg {
+  position: relative;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2000;
+}
+
+#imgBig {
+  position: absolute;
+  z-index: 999;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  transition: all .3s linear 0s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 2001;
+  width: 200px;
+}
+
+#off {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 30px;
+  background-color: white;
+  top: 10%;
+  right: 10%;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 28px;
+  line-height: 25px;
+  cursor: pointer;
+  z-index: 2001;
+}

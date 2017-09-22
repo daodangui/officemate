@@ -1,0 +1,181 @@
+footer {
+  height: 607px;
+  width: 100%;
+  background: #fff;
+}
+footer #foot1 {
+  width: 100%;
+  height: 110px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+footer #foot1 > div > div {
+  display: inline-block;
+  width: 220px;
+  height: 100%;
+  margin-right: 18px;
+}
+footer #foot1 > div > div:nth-child(1) {
+  background: url("../images/footer/footer-01.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(2) {
+  background: url("../images/footer/footer-02.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(3) {
+  background: url("../images/footer/footer-03.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(4) {
+  background: url("../images/footer/footer-04.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(5) {
+  background: url("../images/footer/footer-05.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:last-child {
+  margin-right: 0px;
+}
+footer #foot1 > div > div h6 {
+  font-size: 18px;
+  color: #ff1717;
+  margin-top: 34px;
+}
+footer #foot1 > div > div p {
+  font-size: 12px;
+  color: #333;
+}
+footer #foot1 > div > div h6, footer #foot1 > div > div p {
+  margin-left: 70px;
+}
+footer #foot2 {
+  margin-top: 20px;
+  height: 140px;
+}
+footer #foot2 > div > div {
+  height: 100%;
+  float: left;
+}
+footer #foot2 > div > div:first-child {
+  width: 710px;
+  border-right: 1px solid #333;
+}
+footer #foot2 > div > div:last-child > div {
+  float: left;
+  height: 100%;
+  width: 180px;
+  box-sizing: border-box;
+}
+footer #foot2 > div > div:last-child > div:first-child {
+  text-align: center;
+}
+footer #foot2 > div > div:last-child > div:first-child p:first-child {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 8px;
+}
+footer #foot2 > div > div:last-child > div:first-child p:last-child {
+  color: #ff1717;
+  line-height: 20px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:first-child {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 8px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:nth-child(2) {
+  color: #c7000b;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:last-child {
+  letter-spacing: 2px;
+}
+footer #foot2 > div > div ul {
+  float: left;
+  width: 150px;
+  margin-top: 10px;
+}
+footer #foot2 > div > div ul:first-child {
+  margin-left: 100px;
+}
+footer #foot2 > div > div ul a {
+  font-size: 12px;
+  line-height: 20px;
+}
+footer #foot2 > div > div ul li:first-child a {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+}
+footer #foot3 {
+  color: #666666;
+  margin-top: 30px;
+}
+footer #foot3 a {
+  color: #666;
+}
+footer #foot3 > div {
+  text-align: center;
+}
+footer #foot3 > div ul {
+  overflow: hidden;
+  display: inline-block;
+}
+footer #foot3 > div ul li {
+  float: left;
+}
+footer #foot3 > div ul li a {
+  display: inline-block;
+  border-right: 1px solid #666;
+  padding: 0px 10px;
+}
+footer #foot3 > div p {
+  line-height: 25px;
+}
+footer #foot3 > div p:nth-child(2) {
+  margin-top: 6px;
+}
+footer #foot3 > div p span {
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  background: url("../images/footer/beian.png") no-repeat 0px 0px;
+  margin: 0 3px -6px;
+}
+footer #foot4 {
+  margin-top: 50px;
+}
+footer #foot4 > div {
+  text-align: center;
+}
+footer #foot4 > div ul:first-child {
+  display: inline-block;
+  height: 96px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+footer #foot4 > div ul:first-child li {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer #foot4 > div ul:first-child li img {
+  width: 130px;
+  margin: 0px 20px;
+}
+footer #foot4 > div ul:first-child li:last-child img {
+  width: 70px;
+}
+footer #foot4 > div ul:last-child {
+  margin-top: 20px;
+}
+footer #foot4 > div ul:last-child li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+footer #foot4 > div ul:last-child li:first-child {
+  color: #1a1a1a;
+  font-weight: bold;
+}

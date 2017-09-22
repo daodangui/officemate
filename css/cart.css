@@ -1,0 +1,578 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, td, option, button, p, fieldset, input, textarea, menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font: 12px '微软雅黑';
+}
+
+li {
+  list-style: none;
+}
+
+a, input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: normal;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.pageheart {
+  width: 1190px;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header, #container, footer {
+  width: 100%;
+}
+
+header {
+  height: 185px;
+  background: #fff;
+}
+
+#head_top {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e2e2e2;
+  line-height: 30px;
+  font-size: 12px;
+  color: #666;
+}
+#head_top a {
+  color: #666;
+}
+#head_top div > div, #head_top ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+#head_top #location span {
+  margin-left: 10px;
+}
+#head_top #location .city:after {
+  content: url("../images/home/down.png");
+  position: relative;
+  left: 15px;
+  top: 5px;
+}
+#head_top #login {
+  margin-left: 250px;
+}
+#head_top #login p > a:first-child {
+  color: #e40000;
+}
+#head_top ul {
+  margin-left: 20px;
+}
+#head_top ul li {
+  float: left;
+}
+#head_top ul li a {
+  padding: 0px 10px;
+  text-align: center;
+  display: inline-block;
+}
+#head_top #tel {
+  background: url("../images/home/tel_r.png") no-repeat 0px 6px;
+  box-sizing: border-box;
+  padding-left: 23px;
+}
+#head_top #tel span {
+  font-size: 16px;
+  color: #c7000b;
+}
+
+footer {
+  height: 607px;
+  width: 100%;
+  background: #fff;
+}
+footer #foot1 {
+  width: 100%;
+  height: 110px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+footer #foot1 > div > div {
+  display: inline-block;
+  width: 220px;
+  height: 100%;
+  margin-right: 18px;
+}
+footer #foot1 > div > div:nth-child(1) {
+  background: url("../images/footer/footer-01.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(2) {
+  background: url("../images/footer/footer-02.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(3) {
+  background: url("../images/footer/footer-03.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(4) {
+  background: url("../images/footer/footer-04.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(5) {
+  background: url("../images/footer/footer-05.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:last-child {
+  margin-right: 0px;
+}
+footer #foot1 > div > div h6 {
+  font-size: 18px;
+  color: #ff1717;
+  margin-top: 34px;
+}
+footer #foot1 > div > div p {
+  font-size: 12px;
+  color: #333;
+}
+footer #foot1 > div > div h6, footer #foot1 > div > div p {
+  margin-left: 70px;
+}
+footer #foot2 {
+  margin-top: 20px;
+  height: 140px;
+}
+footer #foot2 > div > div {
+  height: 100%;
+  float: left;
+}
+footer #foot2 > div > div:first-child {
+  width: 710px;
+  border-right: 1px solid #333;
+}
+footer #foot2 > div > div:last-child > div {
+  float: left;
+  height: 100%;
+  width: 180px;
+  box-sizing: border-box;
+}
+footer #foot2 > div > div:last-child > div:first-child {
+  text-align: center;
+}
+footer #foot2 > div > div:last-child > div:first-child p:first-child {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 8px;
+}
+footer #foot2 > div > div:last-child > div:first-child p:last-child {
+  color: #ff1717;
+  line-height: 20px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:first-child {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 8px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:nth-child(2) {
+  color: #c7000b;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:last-child {
+  letter-spacing: 2px;
+}
+footer #foot2 > div > div ul {
+  float: left;
+  width: 150px;
+  margin-top: 10px;
+}
+footer #foot2 > div > div ul:first-child {
+  margin-left: 100px;
+}
+footer #foot2 > div > div ul a {
+  font-size: 12px;
+  line-height: 20px;
+}
+footer #foot2 > div > div ul li:first-child a {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+}
+footer #foot3 {
+  color: #666666;
+  margin-top: 30px;
+}
+footer #foot3 a {
+  color: #666;
+}
+footer #foot3 > div {
+  text-align: center;
+}
+footer #foot3 > div ul {
+  overflow: hidden;
+  display: inline-block;
+}
+footer #foot3 > div ul li {
+  float: left;
+}
+footer #foot3 > div ul li a {
+  display: inline-block;
+  border-right: 1px solid #666;
+  padding: 0px 10px;
+}
+footer #foot3 > div p {
+  line-height: 25px;
+}
+footer #foot3 > div p:nth-child(2) {
+  margin-top: 6px;
+}
+footer #foot3 > div p span {
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  background: url("../images/footer/beian.png") no-repeat 0px 0px;
+  margin: 0 3px -6px;
+}
+footer #foot4 {
+  margin-top: 50px;
+}
+footer #foot4 > div {
+  text-align: center;
+}
+footer #foot4 > div ul:first-child {
+  display: inline-block;
+  height: 96px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+footer #foot4 > div ul:first-child li {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer #foot4 > div ul:first-child li img {
+  width: 130px;
+  margin: 0px 20px;
+}
+footer #foot4 > div ul:first-child li:last-child img {
+  width: 70px;
+}
+footer #foot4 > div ul:last-child {
+  margin-top: 20px;
+}
+footer #foot4 > div ul:last-child li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+footer #foot4 > div ul:last-child li:first-child {
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+#headcontent {
+  width: 100%;
+  height: 115px;
+}
+#headcontent > div > div {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+#headcontent > div > div:first-child {
+  margin-top: 30px;
+}
+#headcontent > div > div:nth-child(2) {
+  line-height: 115px;
+  text-align: center;
+  width: 150px;
+  font-size: 15px;
+  font-weight: normal;
+}
+#headcontent > div > div:nth-child(2) h1:hover {
+  color: red;
+}
+#headcontent > div > div:last-child {
+  float: right;
+  margin-top: 35px;
+}
+#headcontent > div > div:last-child input {
+  width: 425px;
+  height: 40px;
+  box-sizing: border-box;
+  vertical-align: top;
+  border: 1px solid #c7000b;
+  padding-left: 10px;
+}
+#headcontent > div > div:last-child button {
+  height: 40px;
+  width: 48px;
+  background-color: #c7000b;
+  border: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  outline: none;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  height: 150px;
+}
+
+#container #content {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#container #content #itemnum {
+  color: red;
+  font-size: 16px;
+  line-height: 20px;
+}
+#container #content #itemtb {
+  width: 100%;
+}
+#container #content #itemtb table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#container #content #itemtb table tr {
+  border: 1px solid #d4d4d4;
+}
+#container #content #itemtb table td {
+  text-align: center;
+}
+#container #content #itemtb table thead tr {
+  height: 37px;
+  background-color: #efefef;
+  font-size: 14px;
+  color: #444;
+}
+#container #content #itemtb table tbody {
+  height: 102px;
+}
+#container #content #itemtb table tbody p {
+  display: inline-block;
+}
+#container #content #itemtb table tbody img {
+  height: 102px;
+}
+#container #content #itemtb table tbody td:nth-child(2) {
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 80px;
+  width: 600px;
+}
+#container #content #itemtb table tbody td:nth-child(2) p {
+  margin-top: 30px;
+}
+#container #content #itemtb table tbody td:nth-child(6) {
+  color: red;
+  font-size: 16px;
+}
+#container #content #itemtb table tbody td:nth-child(7) a {
+  color: #026eb7;
+  margin: 0px 5px;
+}
+#container #content #itemtb table tbody td:nth-child(7) a:hover {
+  text-decoration: underline;
+}
+#container #content #itemtb table tbody td:nth-child(4) div {
+  border: 1px solid #d4d4d4;
+  display: inline-block;
+}
+#container #content #itemtb table tbody td:nth-child(4) div a {
+  display: inline-block;
+  text-align: center;
+  width: 22px;
+  height: 23px;
+  box-sizing: border-box;
+  margin: 0px;
+  line-height: 23px;
+  font-size: 14px;
+  float: left;
+}
+#container #content #itemtb table tbody td:nth-child(4) div a:hover {
+  background-color: #666;
+  color: white;
+}
+#container #content #itemtb table tbody td:nth-child(4) div a:first-child {
+  border-right: 1px solid #d4d4d4;
+}
+#container #content #itemtb table tbody td:nth-child(4) div a:last-child {
+  border-left: 1px solid #d4d4d4;
+}
+#container #content #itemtb table tbody td:nth-child(4) div input {
+  box-sizing: border-box;
+  border: 0px;
+  vertical-align: top;
+  text-align: center;
+  padding: 0px;
+  float: left;
+  width: 30px;
+  height: 23px;
+}
+#container #content #itemtb table tfoot tr {
+  height: 37px;
+  background-color: #efefef;
+}
+#container #content #itemtb table tfoot tr td:nth-child(2) a {
+  margin: 15px;
+}
+#container #content #itemtb table tfoot tr td:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+#container #content #itemtb table tfoot tr td:last-child a {
+  display: inline-block;
+  width: 100%;
+  height: 36px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  line-height: 36px;
+}
+#container #conbottom #conbmenu ul {
+  font-size: 16px;
+}
+#container #conbottom #conbmenu ul li {
+  float: left;
+  height: 30px;
+  padding: 0px 10px;
+  color: #666666;
+  box-sizing: border-box;
+}
+#container #conbottom #conbmenu ul li:hover {
+  border-bottom: 2px solid red;
+  color: red;
+}
+#container #conbottom #conbslider {
+  width: 100%;
+  height: 288px;
+  position: relative;
+  border: 1px dashed #d4d4d4;
+}
+#container #conbottom #conbslider .swiper-slide {
+  width: 199px;
+  height: 288px;
+  padding: 10px;
+  text-align: center;
+  border-left: 1px dashed #d4d4d4;
+  border-right: 1px dashed #d4d4d4;
+  overflow: hidden;
+}
+#container #conbottom #conbslider .swiper-slide img {
+  height: 150px;
+}
+#container #conbottom #conbslider .swiper-slide .word {
+  margin-top: 10px;
+  text-align: left;
+  line-height: 25px;
+  color: #666;
+}
+#container #conbottom #conbslider .swiper-slide .word p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#container #conbottom #conbslider .swiper-slide .word p:last-child {
+  font-size: 16px;
+  color: red;
+}
+#container #conbottom #conbslider .swiper-slide button {
+  width: 127px;
+  margin-top: 10px;
+  height: 33px;
+  border: 1px solid #d4d4d4;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+#container #conbottom #conbslider .swiper-slide button span:hover {
+  color: red;
+}
+#container #conbottom #conbslider .swiper-slide button i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+#container #conbottom #conbslider .swiper-button-next, #container #conbottom #conbslider .swiper-button-prev {
+  display: none;
+  width: 32px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+#container #conbottom #conbslider:hover .swiper-button-next, #container #conbottom #conbslider:hover .swiper-button-prev {
+  display: block;
+}
+
+#empty {
+  width: 100%;
+  background: #ccc;
+  padding: 90px 0px;
+  margin: 10px 0px;
+  text-align: center;
+  display: none;
+}
+#empty div {
+  display: inline-block;
+}
+#empty > div > div:first-child {
+  font-size: 80px;
+  color: #666;
+}
+#empty > div > div:last-child {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 25px;
+}
+#empty > div > div:last-child a {
+  color: #0563c3;
+}
+#empty > div > div:last-child a:hover {
+  text-decoration: underline;
+}
+
+table tbody tr:last-child {
+  height: 125px;
+  text-align: left;
+}
+table tbody tr:last-child div, table tbody tr:last-child p {
+  display: block;
+}
+table tbody tr:last-child p {
+  font-size: 14px;
+  line-height: 25px;
+  margin: 15px;
+}
+table tbody tr:last-child p:last-child {
+  font-size: 18px;
+}
+table tbody tr:last-child p:last-child span {
+  color: red;
+}

@@ -1,0 +1,832 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, td, option, button, p, fieldset, input, textarea, menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font: 12px '微软雅黑';
+}
+
+li {
+  list-style: none;
+}
+
+a, input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: normal;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.pageheart {
+  width: 1190px;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header, #container, footer {
+  width: 100%;
+}
+
+header {
+  height: 185px;
+  background: #fff;
+}
+
+#head_top {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e2e2e2;
+  line-height: 30px;
+  font-size: 12px;
+  color: #666;
+}
+#head_top a {
+  color: #666;
+}
+#head_top div > div, #head_top ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+#head_top #location span {
+  margin-left: 10px;
+}
+#head_top #location .city:after {
+  content: url("../images/home/down.png");
+  position: relative;
+  left: 15px;
+  top: 5px;
+}
+#head_top #login {
+  margin-left: 250px;
+}
+#head_top #login p > a:first-child {
+  color: #e40000;
+}
+#head_top ul {
+  margin-left: 20px;
+}
+#head_top ul li {
+  float: left;
+}
+#head_top ul li a {
+  padding: 0px 10px;
+  text-align: center;
+  display: inline-block;
+}
+#head_top #tel {
+  background: url("../images/home/tel_r.png") no-repeat 0px 6px;
+  box-sizing: border-box;
+  padding-left: 23px;
+}
+#head_top #tel span {
+  font-size: 16px;
+  color: #c7000b;
+}
+
+#head_middle {
+  width: 100%;
+  height: 115px;
+  color: #666;
+}
+
+#head_menu {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #c7000b;
+  color: white;
+  font-size: 15px;
+}
+#head_menu a {
+  color: white;
+  font-size: 15px;
+}
+#head_menu > div > div, #head_menu > div > ul {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  box-sizing: border-box;
+}
+#head_menu #itemList {
+  width: 205px;
+  text-align: center;
+  background: #ae0000 url("../images/home/mulu.png") no-repeat 30px 13px;
+}
+#head_menu #itemList:hover ul {
+  display: block;
+}
+#head_menu #itemList ul {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  height: 450px;
+  display: none;
+  background-color: rgba(66, 9, 0, 0.8);
+}
+#head_menu #itemList ul li {
+  width: 100%;
+  height: 32px;
+  float: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+#head_menu #itemList ul li > a {
+  font-size: 13px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 32px;
+  border-bottom: 1px solid #4f121a;
+  vertical-align: top;
+}
+#head_menu #itemList ul li:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#head_menu #itemList ul li:hover > a {
+  color: #333;
+}
+#head_menu #itemList ul li:hover .kind {
+  display: block;
+}
+#head_menu #itemList ul li .kind {
+  width: 985px;
+  height: 450px;
+  top: 0px;
+  left: 205px;
+  color: #333;
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 999;
+  text-align: left;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+#head_menu #itemList ul li .kind > div {
+  float: left;
+}
+#head_menu #itemList ul li .kind > div dt {
+  line-height: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px dashed #666;
+}
+#head_menu #itemList ul li .kind > div a {
+  color: #333;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0px 10px;
+  border-right: 1px solid #ccc;
+  line-height: 13px;
+}
+#head_menu #itemList ul li .kind > div a:hover {
+  text-decoration: underline;
+}
+#head_menu #itemList ul li .kind > div:first-child {
+  width: 70%;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+#head_menu #itemList ul li .kind > div:last-child {
+  width: 30%;
+  box-sizing: border-box;
+  height: 200px;
+}
+#head_menu #itemList ul li:last-child {
+  height: 34px;
+}
+#head_menu #itemList ul li:last-child a {
+  border: none;
+}
+#head_menu > div > ul {
+  overflow: hidden;
+  margin-left: -5px;
+}
+#head_menu > div > ul li {
+  float: left;
+}
+#head_menu > div > ul li a {
+  display: inline-block;
+  padding: 0px 20px;
+}
+#head_menu > div > ul li a:hover {
+  background: #ae0000;
+}
+#head_menu > div > div:last-child {
+  float: right;
+}
+#head_menu > div > div:last-child > a {
+  display: inline-block;
+  padding: 0px 20px;
+}
+#head_menu > div > div:last-child > a:hover {
+  background: #ae0000;
+}
+
+#logo {
+  float: left;
+  margin-top: 30px;
+}
+
+#myShoppingCart {
+  width: 174px;
+  height: 42px;
+  line-height: 42px;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  float: right;
+  margin-top: 30px;
+  background: url("../images/home/cart.png") no-repeat 10px 14px;
+  text-align: center;
+}
+#myShoppingCart span:first-child {
+  font-size: 14px;
+  margin-right: 5px;
+  margin-left: 25px;
+}
+#myShoppingCart span:nth-child(2) {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: white;
+  line-height: 24px;
+  text-align: center;
+  background: #ff594e;
+  border-radius: 20px;
+  font-size: 14px;
+}
+#myShoppingCart span:last-child {
+  position: relative;
+  left: 5px;
+  top: 3px;
+}
+
+.triangle {
+  display: inline-block;
+  border: 5px solid transparent;
+  border-top-color: #999;
+}
+
+#search {
+  width: 475px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+#search input {
+  width: 426px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #e40000;
+  margin-top: 30px;
+  padding-left: 5px;
+}
+#search button {
+  width: 49px;
+  height: 40px;
+  border: 0px;
+  float: right;
+  margin-top: 30px;
+  background: #e40000 url("../images/home/search.png") no-repeat 10px 5px;
+}
+#search span {
+  display: inline-block;
+  margin-top: 14px;
+  word-spacing: 5px;
+}
+
+footer {
+  height: 607px;
+  width: 100%;
+  background: #fff;
+}
+footer #foot1 {
+  width: 100%;
+  height: 110px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+footer #foot1 > div > div {
+  display: inline-block;
+  width: 220px;
+  height: 100%;
+  margin-right: 18px;
+}
+footer #foot1 > div > div:nth-child(1) {
+  background: url("../images/footer/footer-01.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(2) {
+  background: url("../images/footer/footer-02.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(3) {
+  background: url("../images/footer/footer-03.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(4) {
+  background: url("../images/footer/footer-04.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:nth-child(5) {
+  background: url("../images/footer/footer-05.png") no-repeat 0px 25px;
+}
+footer #foot1 > div > div:last-child {
+  margin-right: 0px;
+}
+footer #foot1 > div > div h6 {
+  font-size: 18px;
+  color: #ff1717;
+  margin-top: 34px;
+}
+footer #foot1 > div > div p {
+  font-size: 12px;
+  color: #333;
+}
+footer #foot1 > div > div h6, footer #foot1 > div > div p {
+  margin-left: 70px;
+}
+footer #foot2 {
+  margin-top: 20px;
+  height: 140px;
+}
+footer #foot2 > div > div {
+  height: 100%;
+  float: left;
+}
+footer #foot2 > div > div:first-child {
+  width: 710px;
+  border-right: 1px solid #333;
+}
+footer #foot2 > div > div:last-child > div {
+  float: left;
+  height: 100%;
+  width: 180px;
+  box-sizing: border-box;
+}
+footer #foot2 > div > div:last-child > div:first-child {
+  text-align: center;
+}
+footer #foot2 > div > div:last-child > div:first-child p:first-child {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 8px;
+}
+footer #foot2 > div > div:last-child > div:first-child p:last-child {
+  color: #ff1717;
+  line-height: 20px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:first-child {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 8px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:nth-child(2) {
+  color: #c7000b;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+footer #foot2 > div > div:last-child > div:last-child p:last-child {
+  letter-spacing: 2px;
+}
+footer #foot2 > div > div ul {
+  float: left;
+  width: 150px;
+  margin-top: 10px;
+}
+footer #foot2 > div > div ul:first-child {
+  margin-left: 100px;
+}
+footer #foot2 > div > div ul a {
+  font-size: 12px;
+  line-height: 20px;
+}
+footer #foot2 > div > div ul li:first-child a {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+}
+footer #foot3 {
+  color: #666666;
+  margin-top: 30px;
+}
+footer #foot3 a {
+  color: #666;
+}
+footer #foot3 > div {
+  text-align: center;
+}
+footer #foot3 > div ul {
+  overflow: hidden;
+  display: inline-block;
+}
+footer #foot3 > div ul li {
+  float: left;
+}
+footer #foot3 > div ul li a {
+  display: inline-block;
+  border-right: 1px solid #666;
+  padding: 0px 10px;
+}
+footer #foot3 > div p {
+  line-height: 25px;
+}
+footer #foot3 > div p:nth-child(2) {
+  margin-top: 6px;
+}
+footer #foot3 > div p span {
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  background: url("../images/footer/beian.png") no-repeat 0px 0px;
+  margin: 0 3px -6px;
+}
+footer #foot4 {
+  margin-top: 50px;
+}
+footer #foot4 > div {
+  text-align: center;
+}
+footer #foot4 > div ul:first-child {
+  display: inline-block;
+  height: 96px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+footer #foot4 > div ul:first-child li {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer #foot4 > div ul:first-child li img {
+  width: 130px;
+  margin: 0px 20px;
+}
+footer #foot4 > div ul:first-child li:last-child img {
+  width: 70px;
+}
+footer #foot4 > div ul:last-child {
+  margin-top: 20px;
+}
+footer #foot4 > div ul:last-child li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+footer #foot4 > div ul:last-child li:first-child {
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+}
+#container #content {
+  width: 100%;
+}
+#container #content > div {
+  height: 500px;
+}
+#container #content #contop {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+}
+#container #content #contop ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+#container #content #contop ul li {
+  float: left;
+}
+#container #content #contop ul li a {
+  margin: 0px 3px;
+}
+#container #content #conmain .conleft {
+  width: 230px;
+  float: left;
+}
+#container #content #conmain .conleft ul li {
+  margin-bottom: 10px;
+}
+#container #content #conmain .conleft ul li img {
+  width: 100%;
+}
+#container #content #conmain .conright {
+  width: 948px;
+  float: right;
+}
+#container #content #conmain .conright > div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#container #content #conmain .conright .kindlist {
+  border: 2px solid #ddd;
+}
+#container #content #conmain .conright .kindlist > div {
+  width: 100%;
+}
+#container #content #conmain .conright .kindlist > div:first-child {
+  height: 33px;
+  line-height: 33px;
+  padding-left: 10px;
+  background-color: #ececec;
+}
+#container #content #conmain .conright .kindlist > div:first-child p {
+  display: inline-block;
+}
+#container #content #conmain .conright .kindlist > div:first-child p:first-child {
+  font-weight: bold;
+}
+#container #content #conmain .conright .kindlist > div:first-child span {
+  font-weight: bold;
+  color: #d62528;
+}
+#container #content #conmain .conright .kindlist > div:first-child a {
+  float: right;
+  margin-right: 10px;
+}
+#container #content #conmain .conright .kindlist > div:first-child a i {
+  font-size: 9px;
+}
+#container #content #conmain .conright .kindlist > div:nth-child(2) {
+  height: 33px;
+  line-height: 33px;
+  padding-left: 25px;
+  color: #888;
+  background-color: #f7f7f7;
+}
+#container #content #conmain .conright .kindlist > div:last-child {
+  padding: 3px 10px;
+  color: #888;
+}
+#container #content #conmain .conright .kindlist > div:last-child > div {
+  border-bottom: 1px dashed #d4d4d4;
+}
+#container #content #conmain .conright .kindlist > div:last-child > div:last-child {
+  border: 0px;
+}
+#container #content #conmain .conright .kindlist > div:last-child > div ul {
+  margin: 4px;
+  line-height: 24px;
+}
+#container #content #conmain .conright .kindlist > div:last-child > div ul li {
+  float: left;
+  margin: 0px 10px;
+}
+#container #content #conmain .conright .kindlist > div:last-child > div ul li:first-child {
+  width: 70px;
+  text-align: right;
+}
+#container #content #conmain .conright .kindlist > div:last-child > div ul li:nth-child(2) a {
+  display: inline-block;
+  background-color: #c7000b;
+  padding: 0px 5px;
+  color: white;
+}
+#container #content #conmain .conright .listmenu {
+  border: 2px solid #ddd;
+}
+#container #content #conmain .conright .listmenu > div {
+  height: 40px;
+  padding-left: 10px;
+}
+#container #content #conmain .conright .listmenu > div > div {
+  display: inline-block;
+}
+#container #content #conmain .conright .listmenu > div:first-child {
+  background-color: #f7f7f7;
+  line-height: 40px;
+}
+#container #content #conmain .conright .listmenu > div:first-child .listmenu1 button {
+  border: 1px solid #d4d4d4;
+  width: 55px;
+  height: 25px;
+  text-align: center;
+  background-color: #f7f7f7;
+  margin: 0px 5px;
+}
+#container #content #conmain .conright .listmenu > div:first-child .listmenu2 {
+  margin-left: 15px;
+}
+#container #content #conmain .conright .listmenu > div:first-child .listmenu2 select {
+  vertical-align: middle;
+  border: 0px;
+}
+#container #content #conmain .conright .listmenu > div:first-child .listmenu3 {
+  margin-left: 15px;
+}
+#container #content #conmain .conright .listmenu > div:first-child .listmenu3 input {
+  vertical-align: middle;
+}
+#container #content #conmain .conright .listmenu > div:nth-child(2) {
+  line-height: 40px;
+}
+#container #content #conmain .conright .paging > div {
+  width: 100%;
+}
+#container #content #conmain .conright .paging > div ul {
+  float: right;
+}
+#container #content #conmain .conright .paging > div ul li {
+  float: left;
+}
+#container #content #conmain .conright .paging > div ul li a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #d4d4d4;
+  margin: 0px 4px;
+  text-align: center;
+  line-height: 25px;
+}
+#container #content #conmain .conright .paging > div ul li:last-child, #container #content #conmain .conright .paging > div ul li:first-child {
+  font-size: 9px;
+}
+
+.item {
+  float: left;
+  height: 350px;
+  width: 237px;
+  position: relative;
+  padding: 10px;
+  color: #666666;
+}
+.item:hover {
+  top: -3px;
+  box-shadow: 0px 0px 5px #aaa;
+}
+.item .itemimg {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.item .itemimg img {
+  height: 166px;
+}
+.item .iteminfo {
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.item .iteminfo h5 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+.item .iteminfo .price {
+  color: red;
+  font-weight: bold;
+}
+.item .iteminfo p:last-child {
+  margin-left: 5px;
+}
+.item .itemsum {
+  margin-bottom: 5px;
+}
+.item .itemsum div {
+  display: inline-block;
+  height: 23px;
+  border: 1px solid #d4d4d4;
+  margin-bottom: 10px;
+}
+.item .itemsum div a {
+  width: 22px;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.item .itemsum div a:hover {
+  background: #666;
+  color: white;
+}
+.item .itemsum div a:first-child {
+  border-right: 1px solid #d4d4d4;
+}
+.item .itemsum div a:last-child {
+  border-left: 1px solid #d4d4d4;
+}
+.item .itemsum div input {
+  text-align: center;
+  box-sizing: border-box;
+  vertical-align: top;
+  border: 0px;
+  width: 30px;
+  height: 100%;
+}
+.item .itemsum button {
+  width: 92px;
+  height: 25px;
+  background-color: #fc540c;
+  text-align: center;
+  border: 0px;
+  line-height: 25px;
+  color: white;
+  vertical-align: middle;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.item .itembtn button {
+  width: 45px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+#success {
+  position: absolute;
+  width: 300px;
+  display: none;
+  background: white;
+  border: 1px solid #d4d4d4;
+  z-index: 2000;
+}
+#success > div {
+  width: 100%;
+}
+#success .sutitle {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  background: #efefef;
+  cursor: move;
+}
+#success .sutitle p {
+  display: inline-block;
+  margin-left: 10px;
+  color: #333;
+}
+#success .sutitle i {
+  font-size: 20px;
+  color: #ccc;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#success .sutitle i:hover {
+  color: #666;
+}
+#success .sucon {
+  text-align: center;
+  font-size: 16px;
+  background: white;
+}
+#success .sucon p:first-child {
+  color: green;
+  margin: 10px 0px;
+}
+#success .sucon p:first-child i {
+  margin: 0px 5px;
+}
+#success .sucon p:last-child {
+  margin: 15px 0px;
+}
+#success .sucon p:last-child a {
+  font-size: 12px;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  border: 1px solid #666;
+  margin: 0px 10px;
+}
+#success .sucon p:last-child a:last-child {
+  color: white;
+  background: #fc550c;
+}
+#success .sucon p:last-child a:last-child:hover {
+  background: #de4909;
+}
