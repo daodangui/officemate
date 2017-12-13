@@ -77,7 +77,7 @@ require(['../config'],function () {
               $('#success').on('click','.close',function(){
                   $('#success').css('display','none');
               });
-              dragdrop($('#success').get(0),{limt:false,x:true,y:true});
+              dragdrop($('#success').get(0),{x:true,y:true,limt:false});
            })();
        });
        

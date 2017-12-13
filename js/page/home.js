@@ -56,6 +56,7 @@ require(['../config'],function () {
                     }
                 });
             }
+            menu2top();
             //滚动返回顶部
             $('#sidebar li:last').click(function () {
                 var timer = setInterval(function () {
@@ -63,7 +64,6 @@ require(['../config'],function () {
                     if($(window).scrollTop()<=0) clearTimeout(timer);
                 },20);
             });
-            menu2top();
             //鼠标滑动至图片左移
             function imgmousetoggle() {
                 $('.item img').hover(function () {
@@ -100,7 +100,7 @@ require(['../config'],function () {
                 function sideclick() {
                    $('#sidebarscroll li').click(function () {
                        var newsrollTop = $('#itemkind>div').eq($(this).index()).offset().top - 48 ;
-                       $(document.body).animate({
+                       $('body,html').animate({
                            scrollTop : newsrollTop
                        },500)
                    });
@@ -190,7 +190,7 @@ require(['../config'],function () {
                         $('#cartList .lastchild').css('display','block');
                         $('#cartList .empty').css('display','none');
                         $('#cartList').prepend(template('cartmini',officecart));
-                        $('#myShoppingCart .number').each(function(){
+                        $('.number').each(function(){
                             $(this).html(officecart.length);
                         });
                         var sum = 0;

@@ -142,7 +142,7 @@ require(['../config'],function () {
               });
 
           });
-          window.addEventListener('mousewheel',function(e){
+          $(window).on('mousewheel DOMMouseScroll',function(e){
             if($('#imgBig').length > 0)
               e.preventDefault();
           });

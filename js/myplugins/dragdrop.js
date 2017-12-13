@@ -57,7 +57,7 @@
                    }
                    if(option.y){
                        // ele.style.top = Math.min(window.innerHeight - ele.offsetHeight ,Math.max(0,e.clientY - mouse.top)) - parentClientTop + 'px';
-                       ele.style.top = Math.max(0,e.clientY - mouse.top) - parentClientTop + document.body.scrollTop + 'px';
+                       ele.style.top = Math.max(0,e.clientY - mouse.top) - parentClientTop + document.documentElement.scrollTop + 'px';
                    }
                }
            }
